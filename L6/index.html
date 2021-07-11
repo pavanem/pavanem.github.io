@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library</title>
+        <script>
+            function gotoo(val){
+                if(val==="create"){
+                    var src="create.php";
+                    window.location.href = src;
+                }
+                else{
+                    var src="read.php";
+                    window.location.href = src
+                }
+                
+
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>Book Collection</h1>
+        <div id="d1" style="text-align: center; padding: 100px;">
+            <h3>Choose one of the following:</h3>
+            <button name="create" value="create" id="create" onclick="gotoo(this.value)">Create</button>
+            <button name="read" value="read" id="read" onclick="gotoo(this.value)">Read</button>
+            
+        </div>
+    </body>
+</html>
